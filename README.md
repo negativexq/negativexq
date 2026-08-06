@@ -1,39 +1,85 @@
-<h1 align="center">Hi 👋, I'm Ömer Faruk Koç</h1>
+<h1 align="center">Hi, I'm Ömer Faruk Koç 👋</h1>
 
-<h3 align="center">AI/ML Platform Engineer | MLOps Engineer | Data Engineer</h3>
+<h3 align="center">
+AI/ML Platform Engineer · MLOps Engineer · Data Engineer
+</h3>
 
 <p align="center">
-  <a href="https://github.com/negativexq">
-    <img src="https://komarev.com/ghpvc/?username=negativexq&label=Profile%20Views&color=0e75b6&style=flat" alt="Profile views" />
-  </a>
+I build production-oriented ML platforms, RAG systems, data pipelines and event-driven applications.
 </p>
+
+<p align="center">
+  <a href="https://linkedin.com/in/omerfkoc">LinkedIn</a>
+  ·
+  <a href="mailto:omerfkoc98@gmail.com">Email</a>
+  ·
+  <a href="https://github.com/negativexq?tab=repositories">Repositories</a>
+</p>
+
+---
 
 ## About Me
 
-I am an AI/ML Platform Engineer with more than three years of experience in the banking industry.
+I am an AI/ML Platform Engineer with more than three years of experience building and operating production AI, machine learning and data systems in the banking industry.
 
-I build and operate production-grade machine learning platforms, data pipelines and AI applications. My experience covers the full ML lifecycle, including data preparation, model deployment, orchestration, monitoring and CI/CD automation.
+My work covers the complete ML lifecycle, including data preparation, feature pipelines, model deployment, workflow orchestration, monitoring, data quality and CI/CD automation.
 
-* 🔭 Building end-to-end **data and machine learning pipelines**
-* 🤖 Productionizing **ML, LLM and RAG applications**
-* ⚙️ Working with **MLOps, model serving and workflow orchestration**
-* 📊 Developing batch and near real-time data pipelines
-* 🏦 Experienced in production AI/ML systems for banking analytics
-* 🌱 Currently improving my knowledge of **streaming systems, Kafka and cloud-native AI platforms**
-* 📫 Reach me at **[omerfkoc98@gmail.com](mailto:omerfkoc98@gmail.com)**
+* Deployed and operated **10 production ML models**
+* Contributed to **5 production LLM applications**
+* Built pipelines processing approximately **9 million records per day**
+* Developed ML and data workflows using **MLflow, Airflow, dbt, Docker and Kubernetes**
+* Currently focused on **MLOps, RAG, streaming systems and AI platform engineering**
 
-## Connect With Me
+## Featured Projects
 
-<p align="left">
-  <a href="https://linkedin.com/in/omerfkoc" target="_blank">
-    <img
-      src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg"
-      alt="Ömer Faruk Koç LinkedIn"
-      height="30"
-      width="40"
-    />
-  </a>
-</p>
+### [ModelOps Control Plane](https://github.com/negativexq/modelops-control-plane)
+
+A lightweight ModelOps platform for controlled model releases using canary deployments, policy-based promotion, automated rollback and end-to-end benchmark scenarios.
+
+`FastAPI` · `Next.js` · `Docker Compose` · `Locust` · `scikit-learn`
+
+---
+
+### [Production RAG Platform](https://github.com/negativexq/production-rag-platform)
+
+An end-to-end RAG platform with hybrid retrieval, metadata filtering, cross-encoder reranking, grounded generation, page-level citations, evaluation and OpenTelemetry tracing.
+
+`FastAPI` · `Qdrant` · `Ollama` · `OpenTelemetry` · `Jaeger`
+
+---
+
+### [Real-Time Commerce Platform](https://github.com/negativexq/real-time-commerce-platform)
+
+An event-driven commerce platform demonstrating at-least-once processing, idempotency, transactional outbox, retries, dead-letter queues, fraud processing and observability.
+
+`Kafka` · `Redis` · `PostgreSQL` · `Prometheus` · `Grafana`
+
+---
+
+### [dbt Feature Lineage](https://github.com/negativexq/dbt-feature-lineage)
+
+A local-first dbt analysis tool for exploring model dependencies, column-level lineage, downstream impact and SQL transformation flows through a CLI and interactive interface.
+
+`dbt` · `Python` · `sqlglot` · `NetworkX` · `Streamlit`
+
+---
+
+### [Repo Context Forge](https://github.com/negativexq/repo-context-forge)
+
+A local-first MCP repository intelligence platform that generates source-grounded context packs, symbol indexes, dependency graphs and task-specific evidence for coding agents.
+
+`MCP` · `FastMCP` · `Python AST` · `Docker` · `Typer`
+
+---
+
+## Current Focus
+
+* Production-ready RAG and LLM evaluation
+* Model deployment and release automation
+* Kafka-based event-driven architectures
+* ML observability and model monitoring
+* Cloud-native AI platform engineering
+
 
 ## Languages and Tools
 
