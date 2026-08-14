@@ -5,11 +5,12 @@ MLOps & AI Platform Engineer
 </h3>
 
 <p align="center">
-I build and operate production ML platforms, RAG systems, data pipelines and reliability-focused AI infrastructure.
+Building production ML platforms, reliable agentic systems, RAG infrastructure,
+and distributed data applications.
 </p>
 
 <p align="center">
-  <a href="https://omerfkoc.dev">Portfolio</a>
+  <a href="https://omerfkoc.dev"><strong>Portfolio</strong></a>
   ·
   <a href="https://linkedin.com/in/omerfkoc">LinkedIn</a>
   ·
@@ -20,125 +21,172 @@ I build and operate production ML platforms, RAG systems, data pipelines and rel
 
 ---
 
-## About Me
+## About
 
-I am an **MLOps & AI Platform Engineer** with more than three years of experience building and operating production AI, machine learning and data systems in the banking industry.
+I'm an **MLOps & AI Platform Engineer** with 3+ years of experience building and
+operating production machine learning, data, and Generative AI systems in
+financial services.
 
-My professional work spans the ML lifecycle from data and feature pipelines through deployment, orchestration, monitoring, data quality and production operations. My public repositories independently explore the engineering problems around reliable AI platforms, retrieval systems, agent infrastructure and distributed applications.
+My professional work spans feature and data platforms, ML lifecycle automation,
+containerized model serving, monitoring, and on-premises GPU/LLM infrastructure.
 
-- Deployed and operated **10+ production ML models**
-- Contributed to **5 production LLM applications**
-- Built data pipelines processing approximately **9 million records per day**
-- Worked across **MLflow, Airflow, dbt, Docker, Kubernetes, CI/CD and data quality systems**
-- Focused on **MLOps, AI Platform Engineering, RAG reliability, agent infrastructure and distributed systems**
+More recently, my public engineering work has focused on a harder question:
 
-> For architecture diagrams, engineering evidence, project relationships and detailed case studies, visit **[omerfkoc.dev](https://omerfkoc.dev)**.
+> **How do you make probabilistic AI systems reliable enough to interact with real software?**
+
+That has led me toward deterministic execution controls, agent evaluation,
+failure recovery, safe mutation semantics, retrieval infrastructure, and
+observable AI platforms.
+
+### Production experience
+
+- **10+ production ML models** deployed and operated
+- Customer-level data and feature pipelines covering approximately **9M customers**
+- Reduced a core feature-engineering workflow from **120 → 30 minutes**
+- Built an LLM-based call-center intelligence pipeline processing approximately **9,000 recordings daily**
+- Worked across **Docker, Kubernetes, Airflow, dbt, MLRun, FastAPI, RAG, LLM serving, monitoring, and CI/CD**
+
+> Detailed case studies, architecture diagrams, and engineering evidence:
+> **[omerfkoc.dev](https://omerfkoc.dev)**
 
 ---
 
-## Featured Projects
+## Featured Engineering
 
-### 1. [ModelOps Control Plane](https://github.com/negativexq/modelops-control-plane)
+### 1. [Agentic Customer Service Platform](https://github.com/negativexq/agentic-customer-service-platform)
 
-An ML release control plane for controlled model deployments with weighted canary routing, policy-driven evaluation, automated promotion and rollback, and an auditable deployment state machine.
+**Building AI agents that can fail safely.**
 
-Key engineering areas:
+A production-oriented agent platform built around one principle:
 
-- Weighted canary routing
-- Deployment state machine
-- Policy engine
-- Automated promotion and rollback
-- SQLAlchemy optimistic concurrency control
-- Real-stack CI verification
-- Injected failure scenarios
-- Backend validation with strict typing and integration testing
+> **The LLM proposes; deterministic software decides what may execute.**
 
-`Python` · `FastAPI` · `SQLAlchemy` · `Next.js` · `TypeScript` · `Locust` · `Docker Compose`
+LLM outputs are treated as untrusted semantic proposals. Real-world mutations
+remain behind server-owned grounding, target validation, business policy,
+persisted confirmation, idempotency, and audit controls.
+
+**Prospective live-model evidence**
+
+29 unsafe semantic proposals  
+→ 26 deterministic guard interventions  
+→ 3 unsafe executable survivors  
+→ 0 unsafe executions
+
+- **540** measured executions across 180 bilingual scenarios × 3 repetitions
+- **0 unsafe executions**
+- **0 confirmation bypasses**
+- **0 unauthorized mutations**
+- **0 duplicate mutations**
+- Unsafe executable survivors reduced **15 → 3 (-80%)** through deterministic hardening
+
+The project also includes hybrid RAG, persistent memory, human-in-the-loop
+workflows, resilience controls, OpenTelemetry tracing, PostgreSQL persistence,
+and an operator console.
+
+`Python` · `FastAPI` · `LangGraph` · `PostgreSQL` · `Qdrant` · `OpenTelemetry` · `React`
 
 ---
 
 ### 2. [Knowledge Base RAG](https://github.com/negativexq/knowledge-base-rag)
 
-A reliability-oriented RAG platform with multi-source ingestion, incremental synchronization, hybrid retrieval, reranking, citation integrity and observable index repair.
+A reliability-oriented multi-source RAG platform covering ingestion,
+synchronization, retrieval, reranking, citation integrity, evaluation, and
+observable index lifecycle management.
 
 Key engineering areas:
 
-- PDF, Markdown and Notion ingestion
-- Incremental synchronization
 - Dense + sparse hybrid retrieval
-- Native RRF fusion
+- Reciprocal Rank Fusion
 - Cross-encoder reranking
-- Citation-aware generation
-- Citation integrity validation
+- Qdrant reconciliation
+- Citation integrity
 - Versioned re-indexing
-- Cancellation safety
-- Qdrant / registry reconciliation
-- Schema migration
-- OpenTelemetry tracing and Jaeger inspection
-- RAG evaluation and reranker experiments
+- Partial-write and cancellation recovery
+- OpenTelemetry / Jaeger
+- DeepEval and bilingual retrieval experiments
+- **448-test suite**
 
-The project also includes a bilingual reranker investigation across mono-lingual and cross-lingual retrieval configurations.
-
-`Python` · `FastAPI` · `Qdrant` · `Ollama` · `OpenTelemetry` · `Jaeger` · `DeepEval` · `Docker Compose`
-
-<sub>Knowledge Base RAG evolved from an earlier focused single-PDF [Production RAG Platform](https://github.com/negativexq/production-rag-platform) experiment.</sub>
+`Python` · `FastAPI` · `Qdrant` · `OpenTelemetry` · `Jaeger` · `DeepEval` · `Docker`
 
 ---
 
-### 3. [Repo Context Forge](https://github.com/negativexq/repo-context-forge)
+### 3. [ModelOps Control Plane](https://github.com/negativexq/modelops-control-plane)
 
-A local-first MCP repository intelligence and agent platform for deterministic, source-grounded code analysis within strict read-only boundaries.
+An ML release control plane for deciding when a model version is safe to receive
+production traffic.
 
 Key engineering areas:
 
-- Six local MCP servers
-- 40 configured tools
-- Deterministic repository analysis
-- Symbol, reference and dependency analysis
-- Source-grounded context packs
-- Task-specific evidence generation
-- Bounded local Ollama agent
-- Validated tool arguments
-- Filesystem and path containment
-- Restricted read-only Git subprocess boundary
-- Read-only process security model
+- Weighted canary routing
+- Policy-driven evaluation
+- Automated promotion and rollback
+- Fault injection
+- Optimistic concurrency control
+- Auditable deployment timelines
+- Worker-driven release automation
+- **10% → 25% → 50% → 100%** progressive promotion
 
-`Python` · `MCP` · `FastMCP` · `Python AST` · `Ollama` · `Git` · `Docker` · `Typer`
+`Python` · `FastAPI` · `SQLAlchemy` · `Next.js` · `TypeScript` · `Docker Compose`
 
 ---
 
 ### 4. [Real-Time Commerce Platform](https://github.com/negativexq/real-time-commerce-platform)
 
-A Kafka-based distributed commerce system focused on at-least-once correctness, transactional persistence, bounded failure handling, observability and measured performance limits.
+A Kafka-based distributed system focused on correctness under at-least-once
+delivery and measured performance limits.
 
 Key engineering areas:
 
-- At-least-once delivery
+- At-least-once processing
 - Idempotent consumers
+- Transactional persistence
 - Transactional outbox
-- Bounded retries
-- Dead-letter queue
-- Partition-scoped ordering
-- PostgreSQL transactional persistence
+- Bounded retries and DLQ
 - Redis coordination
+- PostgreSQL query optimization
 - Prometheus / Grafana observability
-- Query-plan-driven optimization
-- Performance boundary testing
 
-The documented **~742 evt/s** service rate is an **isolated local benchmark**, not a production-capacity claim.
+A query-plan-driven optimization reduced a critical PostgreSQL lookup from
+approximately **10.9 ms → 0.25 ms**. The isolated local
+Kafka → processor → persistence path sustained approximately **742 events/s**.
 
 `Kafka` · `PostgreSQL` · `Redis` · `FastAPI` · `Prometheus` · `Grafana` · `Docker Compose`
 
 ---
 
-### 5. [dbt Feature Lineage](https://github.com/negativexq/dbt-feature-lineage)
+## More Work
 
-A local-first dbt analysis tool for model dependencies, cross-model column lineage, downstream impact and SQL transformation flow without requiring a live warehouse connection.
+### [Repo Context Forge](https://github.com/negativexq/repo-context-forge)
+
+A local-first MCP repository intelligence and agent platform for deterministic,
+source-grounded code analysis within strict read-only boundaries.
 
 Key engineering areas:
 
-- `target/manifest.json` analysis
-- Compiled SQL analysis when available
+- **40 configured tools across six MCP servers**
+- Python AST symbol and call analysis
+- Dependency and reference analysis
+- Source-grounded context generation
+- Validated tool arguments
+- Bounded local agent execution
+- Filesystem and path containment
+- Restricted read-only Git subprocess access
+- Deterministic repository intelligence workflows
+
+`Python` · `MCP` · `FastMCP` · `Python AST` · `Ollama` · `Git` · `Docker` · `Typer`
+
+---
+
+### [dbt Feature Lineage](https://github.com/negativexq/dbt-feature-lineage)
+
+A local-first dbt analysis tool for understanding model dependencies,
+cross-model column lineage, downstream impact, and SQL transformation flow
+without requiring a live warehouse connection.
+
+Key engineering areas:
+
+- dbt manifest analysis
+- Compiled SQL analysis
 - Static SQL / YAML fallback
 - Cross-model column lineage
 - Upstream and downstream tracing
@@ -150,218 +198,159 @@ Key engineering areas:
 
 ---
 
-## Current Engineering Directions
+## Engineering Focus
 
-I keep demonstrated capabilities separate from topics that I am actively exploring or planning. These areas extend the engineering problems already present in my current projects.
+### Reliable Agentic Systems
 
-### Agent Orchestration — Learning
+I focus on keeping probabilistic model behavior behind explicit software
+boundaries rather than allowing models to directly own execution authority.
 
-Exploring stateful agent workflows with explicit control flow instead of hiding orchestration inside prompts.
+Current areas include:
 
-Focus areas:
-
-- LangGraph
-- Stateful workflows
-- Branching
-- Retries
+- Structured model outputs
+- Deterministic grounding
+- Target admissibility
+- Business-policy enforcement
+- Human-in-the-loop confirmation
+- Idempotent mutation semantics
 - Failure recovery
-- Human-in-the-loop
-- Checkpointing
-- Workflow observability
+- Persistent agent state
+- Agent evaluation
+- Runtime observability
 
-**Evidence target:** build and validate a production-style agent workflow with explicit state transitions, tracing and reproducible failure scenarios.
+The goal is not to make LLMs incapable of making mistakes.
 
----
-
-### Agentic Memory — Learning
-
-Investigating how short-term workflow state and persistent memory can be separated, retrieved and compacted while keeping agent behavior inspectable and bounded.
-
-Focus areas:
-
-- Short-term state
-- Long-term memory
-- Episodic memory
-- Semantic memory
-- Retrieval
-- Retention policies
-- Memory compaction
-- Memory lifecycle
-
-**Evidence target:** add persistent memory to an agent workflow and evaluate retrieval relevance, retention behavior, compaction and failure cases.
+The goal is to make those mistakes **non-authoritative**.
 
 ---
 
-### Context Engineering for RAG — Learning
+### AI / ML Platform Engineering
 
-Extending existing retrieval and reranking work into systematic context construction.
+My platform work focuses on the systems around models rather than only the
+models themselves:
 
-Retrieval answers:
-
-> Which evidence do we find?
-
-Context engineering answers:
-
-> Which retrieved evidence should enter the model context, in what order, and within what budget?
-
-Focus areas:
-
-- Context construction
-- Chunk selection
-- Context ordering
-- Context budgeting
-- Redundancy reduction
-- Diversity-aware selection
-- Coverage-aware selection
-- MMR
-- Metadata-aware context
-- Context compression
-- Source-grounded context
-- Context-window management
-
-**Evidence target:** compare naive top-k retrieval with diversity-aware and coverage-aware context construction using answer quality, source coverage, context size and latency.
-
----
-
-### GraphRAG — Learning
-
-Exploring when explicit entities and relationships improve retrieval compared with vector-only approaches, especially for multi-hop and relationship-heavy questions.
-
-Focus areas:
-
-- Neo4j
-- Knowledge graphs
-- Entity extraction
-- Relationship modeling
-- Graph traversal
-- Multi-hop retrieval
-- Vector + graph retrieval
-- Metadata filtering
-
-**Evidence target:** build a Neo4j-backed GraphRAG experiment and compare it against conventional hybrid RAG on the same evaluation set.
-
----
-
-### LLM / RAG Evaluation — Extending Existing Work
-
-The current portfolio already includes retrieval evaluation, bilingual reranker experiments, citation integrity checks and observable RAG workflows. The next step is turning these into repeatable benchmark suites.
-
-Focus areas:
-
-- Recall@K
-- MRR
-- nDCG
-- Reranker evaluation
-- Citation integrity
-- Grounding / faithfulness
-- Context efficiency
-- Latency
-- Regression testing
-- Versioned evaluation datasets
-
-**Evidence target:** create a versioned evaluation dataset and automated benchmark comparing retrieval and context-construction configurations across quality, grounding, context size and latency metrics.
-
----
-
-### Terraform — Planned
-
-Planning to move existing local platform projects toward reproducible infrastructure provisioning.
-
-Focus areas:
-
-- Infrastructure as Code
-- Reusable modules
-- Remote state
-- Environment separation
-- CI validation
-- Cloud deployment
-
-**Evidence target:** provision an existing portfolio platform with reusable Terraform modules, remote state and separate environments.
-
----
-
-### AI Platform on Kubernetes — Planned
-
-Extending existing containerized AI systems toward production orchestration rather than treating Kubernetes as an isolated technology exercise.
-
-Focus areas:
-
+- Feature platforms
+- Model lifecycle automation
 - Model serving
-- Application workloads
-- Health checks
-- Autoscaling
-- Rollout strategies
-- Resource requests and limits
-- GPU scheduling
-- Service networking
-- Configuration and secrets
-- Workload isolation
+- Canary deployments
+- Promotion and rollback
+- Evaluation gates
+- Containerized workloads
+- CI/CD
+- Monitoring
+- On-premises GPU infrastructure
+- Reproducible deployment workflows
+
+---
+
+### Retrieval & RAG Reliability
+
+I treat retrieval as an engineered subsystem rather than a single vector-search
+call.
+
+Areas I work on include:
+
+- Hybrid dense + sparse retrieval
+- Reciprocal Rank Fusion
+- Reranking
+- Citation integrity
+- Retrieval evaluation
+- Index synchronization
+- Versioned re-indexing
+- Failure recovery
+- Qdrant lifecycle management
+- Cross-lingual retrieval behavior
 - Observability
 
-**Evidence target:** deploy an existing ModelOps or RAG workload on Kubernetes with health checks, resource controls, rollout strategy and observable service behavior.
-
 ---
 
-### AI Platform Observability — Learning
+### Distributed Systems
 
-Extending existing observability work toward AI-platform-specific signals across model serving, retrieval, agent execution and release automation.
+I also build systems where correctness depends on failure semantics and state
+transitions rather than only application logic.
 
-Focus areas:
+Areas include:
 
-- Distributed tracing
-- Model-serving metrics
-- Retrieval latency
-- Token usage
-- Agent traces
-- Tool-call traces
-- Rollout metrics
-- Failure classification
-- SLIs / SLOs
-- Evaluation telemetry
-
-**Evidence target:** define and validate an observable AI service workflow with end-to-end traces, platform metrics, failure classification and explicit SLIs.
+- Kafka
+- At-least-once delivery
+- Idempotency
+- Transactional outbox
+- Retry and DLQ strategies
+- PostgreSQL transactions
+- Redis coordination
+- Concurrency control
+- Performance profiling
+- Query-plan-driven optimization
 
 ---
 
 ## Engineering Stack
 
-### AI / ML Platform
+### AI / Agentic Systems
 
-`Python` · `FastAPI` · `MLflow` · `Docker` · `Kubernetes` · `GitHub Actions` · `scikit-learn`
+`LangGraph` · `LangChain` · `RAG` · `Qdrant` · `Structured Outputs` · `Evaluation` · `MCP` · `Ollama` · `llama.cpp` · `Hugging Face`
 
-### Retrieval / GenAI
+### MLOps / AI Platform
 
-`Qdrant` · `Ollama` · `RAG` · `OpenTelemetry` · `Jaeger` · `DeepEval`
+`MLRun` · `Docker` · `Kubernetes` · `GitHub Actions` · `FastAPI` · `Model Serving` · `Feature Stores` · `Canary Deployment`
 
-### Data & Streaming
+### Data / Distributed Systems
 
-`Kafka` · `PostgreSQL` · `Oracle` · `Trino` · `dbt` · `Airflow` · `SQL Server`
+`Apache Airflow` · `dbt` · `Apache Kafka` · `PostgreSQL` · `Oracle` · `Trino` · `Redis` · `SQL`
 
-### Engineering
+### Observability / Reliability
 
-`Git` · `Linux` · `Bash` · `CI/CD` · `REST APIs`
+`OpenTelemetry` · `Jaeger` · `Prometheus` · `Grafana` · `Great Expectations` · `Deepchecks`
 
-> Technologies listed above reflect current professional or public-project evidence. Planned and learning technologies remain in the roadmap section until they have demonstrated evidence.
+### Infrastructure
+
+`Azure` · `On-Premises GPU` · `Linux` · `Git` · `Docker Compose`
 
 ---
 
-## GitHub Statistics
+## How I Think About AI Engineering
+
+The model is only one component of an AI system.
+
+Production reliability also depends on:
+
+- What inputs the model is allowed to trust
+- What outputs the application is allowed to execute
+- How business state is validated
+- How retries interact with writes
+- How confirmations are persisted
+- How retrieval evidence is bounded
+- How failures are classified
+- How behavior is evaluated
+- How runtime decisions are observed
+- How deployment changes are promoted or rolled back
+
+That is the engineering layer I am most interested in.
+
+> **Nondeterministic model behavior inside deterministic software boundaries.**
+
+---
+
+## Portfolio
+
+For full project case studies, architecture diagrams, engineering evidence,
+benchmarks, and project relationships:
+
+### [omerfkoc.dev](https://omerfkoc.dev)
+
+You can also explore all repositories directly from my
+[GitHub profile](https://github.com/negativexq?tab=repositories).
+
+---
 
 <p align="center">
-  <img
-    src="https://github-readme-stats.vercel.app/api?username=negativexq&show_icons=true&theme=default&hide_border=true"
-    alt="Ömer Faruk Koç GitHub statistics"
-    height="165"
-  />
-  <img
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=negativexq&layout=compact&theme=default&hide_border=true"
-    alt="Most used languages"
-    height="165"
-  />
+  <strong>AI, data, and distributed systems — built with evidence.</strong>
 </p>
 
----
-
 <p align="center">
-  <a href="https://omerfkoc.dev"><strong>omerfkoc.dev</strong></a>
+  <a href="https://omerfkoc.dev">Portfolio</a>
+  ·
+  <a href="https://linkedin.com/in/omerfkoc">LinkedIn</a>
+  ·
+  <a href="mailto:omerfkoc98@gmail.com">Email</a>
 </p>
