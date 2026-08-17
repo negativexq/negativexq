@@ -4,8 +4,6 @@
 
 I build production-oriented AI and distributed systems with a focus on **reliability, observability, evaluation, and system design**.
 
-Previously worked on ML and LLM platforms in banking, supporting **10 production ML models, 5 production LLM applications, and ~9M records/day**.
-
 Currently focused on:
 
 * Agentic AI systems & evaluation
