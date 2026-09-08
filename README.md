@@ -1,18 +1,20 @@
 # Ömer Faruk Koç
 
-**AI/ML Platform Engineer · MLOps · Agentic Systems**
+**AI Engineer · AI Platform · MLOps · LLM Systems**
 
-I build production-oriented AI and distributed systems with a focus on **reliability, observability, evaluation, and system design**.
+I engineer production AI systems around **reliability, evaluation, explicit trust boundaries, and operational control**.
 
-Currently focused on:
+**3+ years building and operating production ML, data, and GenAI systems.**
 
-* Agentic AI systems & evaluation
-* MLOps / ModelOps platforms
-* Distributed systems & reliability
-* Go, Python, Kubernetes & cloud-native tooling
+### Selected engineering evidence
 
-**Stack:** Python · Go · FastAPI · Kafka · PostgreSQL · Redis · Airflow · dbt · MLflow · Docker · Kubernetes · LangGraph · OpenTelemetry
+- **Agentic AI:** controlled LLM execution with 0 unsafe executions across 540 measured safety attempts
+- **LLM Fine-Tuning:** Qwen3-4B specialization improved diagnosis exact match from 65.3% → 99.3%
+- **RAG & Evaluation:** multilingual retrieval with 95.9% candidate evidence recall
+- **ModelOps:** automated canary promotion/rollback with desired-vs-observed reconciliation
+- **Text-to-SQL:** governed execution with deterministic policy, cost gates, and external benchmark evaluation
+- **Distributed Systems:** Kafka/PostgreSQL/Redis platform with measured workload-sensitive capacity
 
-[Website](https://omerfkoc.dev) · [LinkedIn](https://www.linkedin.com/in/omer-faruk-koc/) · [GitHub](https://github.com/negativexq)
+**Core:** Python · FastAPI · PostgreSQL · Kafka · Redis · Docker · Kubernetes · MLflow · Airflow · dbt · LangGraph · Qdrant · OpenTelemetry
 
-> Selected projects are pinned below ↓
+[Portfolio](https://omerfkoc.dev) · [LinkedIn](https://www.linkedin.com/in/omer-faruk-koc/)
