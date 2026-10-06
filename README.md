@@ -10,7 +10,7 @@ I build production AI systems with an emphasis on **reliability, observability, 
 
 * [**ML Platform Infrastructure**](https://github.com/negativexq/ml-platform-infrastructure) — Kubernetes ML control plane with Argo, MLflow, KServe/vLLM, canary serving, and observability · **645K load-test requests, 0 failures**
 * [**Agentic SRE**](https://github.com/negativexq/agentic-sre) — deterministic, evidence-grounded Kubernetes incident investigation across metrics, logs, traces, and topology
-* [**Agentic AI Control Plane**](https://github.com/negativexq/agentic-customer-service-platform) — policy-controlled agent execution with RAG, HITL, and deterministic safety boundaries
+* [**Agentic Customer Service Platform**](https://github.com/negativexq/agentic-customer-service-platform) — production-oriented agentic AI control plane with RAG, HITL, policy-controlled execution, and deterministic safety boundaries
 * [**Agentic Security Audit**](https://github.com/negativexq/agentic-security-audit) — security auditing for tool-using agents, MCP, RAG, memory, approvals, and durable execution
 * [**Knowledge Base RAG**](https://github.com/negativexq/knowledge-base-rag) — multilingual hybrid retrieval, reranking, grounding, and evaluation · **95.9% evidence recall**
 * [**DecisionSQL**](https://github.com/negativexq/decision-sql) — governed Text-to-SQL with deterministic execution boundaries · **88.9% task success**
